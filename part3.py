@@ -1,5 +1,8 @@
 def is_leapyear(year):
-  if year % 100 == 0:
+  if isinstance(year, str) or isinstance(year, float):
+    return False
+     
+  elif year % 100 == 0:
     if year % 400 == 0:
       return True
     else:
@@ -15,4 +18,4 @@ def is_leapyear(year):
   else:
     return False
     
-print (is_leapyear())
+print (is_leapyear("hi"))

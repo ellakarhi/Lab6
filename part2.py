@@ -1,5 +1,5 @@
-
 import math
+
 def hypotenuse(a, b):
   assert isinstance(a, int), "a must be a integer"
   assert isinstance(b, int), "b must be an integer"
